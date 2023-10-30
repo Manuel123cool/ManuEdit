@@ -224,7 +224,7 @@ void WinFromFile::updateForSave(int ch)
 
 void WinFromFile::renewLine(int line)
 {
-    if (line > m_fileLines.size()) 
+    if (line >= m_fileLines.size()) 
     {
         for (int i{m_fileLines.size()}; i <= line; ++i)
         {
